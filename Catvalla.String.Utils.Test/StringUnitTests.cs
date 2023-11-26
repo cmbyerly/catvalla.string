@@ -85,5 +85,41 @@ namespace Catvalla.String.Utils.Test
 
             Assert.Equal("SSSSSSSS", testVal);
         }
+
+        [Fact]
+        public void DatabaseColCamelTest()
+        {
+            string s = "SOME_COLUMN_NAME";
+            string testVal = s.ToCamelCase();
+
+            Assert.Equal("someColumnName", testVal);
+        }
+
+        [Fact]
+        public void DatabaseColPascalTest()
+        {
+            string s = "SOME_COLUMN_NAME";
+            string testVal = s.ToPascalCase();
+
+            Assert.Equal("SomeColumnName", testVal);
+        }
+
+        [Fact]
+        public void DatabaseColCamelTest123()
+        {
+            string s = "SOME_COLUMN_NAME234";
+            string testVal = s.ToCamelCase();
+
+            Assert.Equal("someColumnName234", testVal);
+        }
+
+        [Fact]
+        public void DatabaseColPascalTest123()
+        {
+            string s = "SOME_COLUMN_NAME234";
+            string testVal = s.ToPascalCase();
+
+            Assert.Equal("SomeColumnName234", testVal);
+        }
     }
 }

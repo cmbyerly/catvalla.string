@@ -11,9 +11,11 @@
     <RepositoryUrl>https://github.com/cmbyerly/catvalla.string.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <VersionPrefix>1.0.1</VersionPrefix>
+    <VersionPrefix>1.0.2</VersionPrefix>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>2023 Christopher Byerly</Copyright>
+    <PackageTags>string, utility, special cases, camel case, pascal case, replace, ignore case</PackageTags>
+    <PackageIcon>catvalla_128.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="catvalla_128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
